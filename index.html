@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#10243b">
+    <meta
+      name="description"
+      content="La boutique Family Basket : les couleurs du club, le même esprit d'équipe."
+    >
+    <title>La boutique — Family Basket</title>
+    <link rel="icon" type="image/jpeg" href="assets/logo.jpg">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/products.js" defer></script>
+    <script src="js/main.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#contenu">Aller au contenu</a>
+
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="#accueil" aria-label="Family Basket, accueil">
+          <img class="brand-logo" src="assets/logo.jpg" alt="">
+          <span class="brand-name">FAMILY <strong>BASKET</strong></span>
+        </a>
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="site-nav"
+          aria-label="Ouvrir le menu"
+        >
+          <span></span><span></span><span></span>
+        </button>
+        <nav class="site-nav" id="site-nav" aria-label="Navigation principale">
+          <a href="#accueil">Accueil</a>
+          <a href="#boutique">La boutique</a>
+          <a href="#club">Le club</a>
+          <a href="#contact">Contact</a>
+          <a class="nav-cta" href="#boutique">Découvrir la boutique <span aria-hidden="true">↗</span></a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="contenu">
+      <section class="hero" id="accueil" aria-labelledby="hero-title">
+        <div class="hero-inner">
+          <div class="hero-copy">
+            <p class="eyebrow"><span class="eyebrow-dot"></span> La boutique du club</p>
+            <h1 id="hero-title">Un club.<br>Une <span>famille.</span></h1>
+            <p class="hero-description">
+              Sur le terrain comme en tribune, portons ensemble les couleurs de Family Basket.
+            </p>
+            <a class="button button-light" href="#boutique">
+              Voir les articles <span aria-hidden="true">↓</span>
+            </a>
+            <p class="hero-note">Chaque achat fait grandir l'esprit d'équipe.</p>
+          </div>
+          <div class="hero-art" aria-label="Logo Family Basket">
+            <div class="hero-sun"></div>
+            <div class="hero-ring ring-one"></div>
+            <div class="hero-ring ring-two"></div>
+            <div class="hero-logo-frame">
+              <img src="assets/logo.jpg" alt="Mascotte et logo Family Basket">
+            </div>
+            <span class="hero-stamp">ENSEMBLE<br>PLUS FORTS</span>
+            <span class="hero-caption">Depuis le bord du terrain jusqu'aux gradins.</span>
+          </div>
+        </div>
+        <div class="hero-bottom-line" aria-hidden="true">
+          <span>FAMILY BASKET</span><span>LE JEU NOUS RASSEMBLE</span><span>FAMILY BASKET</span>
+        </div>
+      </section>
+
+      <section class="shop section-wrap" id="boutique" aria-labelledby="shop-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow eyebrow-dark">À chacun ses couleurs</p>
+            <h2 id="shop-title">La boutique <span>du club.</span></h2>
+          </div>
+          <p class="section-intro">
+            La tenue pour jouer, le sweat pour encourager, et toujours le même esprit Family.
+          </p>
+        </div>
+
+        <div class="catalog-notice" role="note">
+          <span class="notice-icon" aria-hidden="true">i</span>
+          <p>Catalogue de démonstration : les articles, tarifs et liens de commande restent à renseigner.</p>
+        </div>
+
+        <div class="filters" role="group" aria-label="Filtrer les articles par catégorie">
+          <button class="filter-button is-active" type="button" data-category="all" aria-pressed="true">Tout voir</button>
+          <button class="filter-button" type="button" data-category="tenues" aria-pressed="false">Tenues de jeu</button>
+          <button class="filter-button" type="button" data-category="textile" aria-pressed="false">Textile</button>
+          <button class="filter-button" type="button" data-category="accessoires" aria-pressed="false">Accessoires</button>
+        </div>
+
+        <div class="product-grid" id="product-grid" aria-live="polite"></div>
+        <p class="catalog-count" id="catalog-count"></p>
+      </section>
+
+      <section class="club-section" id="club" aria-labelledby="club-title">
+        <div class="club-inner section-wrap">
+          <div class="club-mark" aria-hidden="true">
+            <span class="club-mark-top">FAMILY</span>
+            <span class="club-mark-ball">●</span>
+            <span class="club-mark-bottom">BASKET</span>
+          </div>
+          <div class="club-copy">
+            <p class="eyebrow">Bien plus qu'un maillot</p>
+            <h2 id="club-title">Le basket nous rassemble.<br><span>La famille nous fait avancer.</span></h2>
+            <p>
+              Family Basket, c'est l'énergie du jeu et la force du collectif. La boutique rassemble
+              supporters, joueurs et proches autour des couleurs du club. Les éventuels bénéfices
+              contribuent à faire vivre le projet associatif.
+            </p>
+            <a class="text-link" href="#contact">En savoir plus sur la boutique <span aria-hidden="true">→</span></a>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact-strip" id="contact" aria-labelledby="contact-title">
+        <div class="contact-inner section-wrap">
+          <div>
+            <p class="eyebrow eyebrow-dark">À très vite sur le terrain</p>
+            <h2 id="contact-title">La suite se joue <span>ensemble.</span></h2>
+          </div>
+          <p>Les informations de commande seront ajoutées ici dès que la boutique sera prête.</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner section-wrap">
+        <a class="brand footer-brand" href="#accueil" aria-label="Family Basket, retour en haut">
+          <img class="brand-logo" src="assets/logo.jpg" alt="">
+          <span class="brand-name">FAMILY <strong>BASKET</strong></span>
+        </a>
+        <p>Les couleurs du club, le même esprit d'équipe.</p>
+        <span class="footer-credit">© <span id="current-year"></span> Family Basket</span>
+      </div>
+    </footer>
+  </body>
+</html>
